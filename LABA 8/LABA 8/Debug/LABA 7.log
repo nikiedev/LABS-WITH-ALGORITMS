@@ -1,0 +1,27 @@
+﻿  Source.cpp
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(1): error C2008: ;: не требуется в макроопределении
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(20): error C2064: результатом вычисления фрагмента не является функция, принимающая 2 аргументов
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(83): error C2059: синтаксическая ошибка: ;
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(83): error C2059: синтаксическая ошибка: ,
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(83): error C2059: синтаксическая ошибка: )
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(88): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(89): error C3861: min: идентификатор не найден
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(97): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(102): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(102): error C2065: bad_char: необъявленный идентификатор
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(105): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(111): error C2065: bad_char: необъявленный идентификатор
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(111): error C3861: max: идентификатор не найден
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(117): error C2143: синтаксическая ошибка: отсутствие "]" перед ";"
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(117): error C2059: синтаксическая ошибка: ]
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(123): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "i"
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(123): error C2059: синтаксическая ошибка: ;
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(123): error C2059: синтаксическая ошибка: )
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(124): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "skip_table"
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(127): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(132): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(150): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(159): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(160): warning C4018: >=: несоответствие типов со знаком и без знака
+c:\users\виталий\desktop\laba 8\laba 7\source.cpp(170): warning C4129: L: неизвестная escape-последовательность
