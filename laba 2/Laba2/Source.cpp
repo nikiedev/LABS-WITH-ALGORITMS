@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <cstdlib>
+
 #include <string.h>
 
 using namespace std;
@@ -18,12 +19,12 @@ bool endOfFile(FILE *f)
 	return false;
 }
 
-void readFromFile(const char fname[], vector<int> &A, vector<int> &B)//зчитуємо послідовності  з файла
+void readFromFile(const char fname[], vector<int> &A, vector<int> &B)//Г§Г·ГЁГІГіВєГ¬Г® ГЇГ®Г±Г«ВіГ¤Г®ГўГ­Г®Г±ГІВі  Г§ ГґГ Г©Г«Г 
 {
 	FILE *f = fopen(fname, "rt");
 	char c, str[4];
 	int i = 0;
-	bool a = true; //считуємо дані у вектор А
+	bool a = true; //Г±Г·ГЁГІГіВєГ¬Г® Г¤Г Г­Ві Гі ГўГҐГЄГІГ®Г° ГЂ
 	while (!endOfFile(f))
 	{
 		fread(&c, sizeof(char), 1, f);
@@ -55,7 +56,7 @@ void readFromFile(const char fname[], vector<int> &A, vector<int> &B)//зчитуємо 
 	fclose(f);
 }
 
-void findPair(vector<int> &A, vector<int> &B, vector<int> &C) //підбираємо пари
+void findPair(vector<int> &A, vector<int> &B, vector<int> &C) //ГЇВіГ¤ГЎГЁГ°Г ВєГ¬Г® ГЇГ Г°ГЁ
 {
 	for (int i = 0; i < A.size(); ++i)
 	{
@@ -72,7 +73,7 @@ void findPair(vector<int> &A, vector<int> &B, vector<int> &C) //підбираємо пари
 	}
 }
 
-void Tail(vector<int> &A, vector<int> &Arest) //визначаємо тих хто залишився без пари
+void Tail(vector<int> &A, vector<int> &Arest) //ГўГЁГ§Г­Г Г·Г ВєГ¬Г® ГІГЁГµ ГµГІГ® Г§Г Г«ГЁГёГЁГўГ±Гї ГЎГҐГ§ ГЇГ Г°ГЁ
 {
 	for (int i = 0; i < A.size(); ++i)
 	{
@@ -84,7 +85,7 @@ void Tail(vector<int> &A, vector<int> &Arest) //визначаємо тих хто залишився без
 	}
 }
 
-void show(vector<int> A)//вивід інформації на екран
+void show(vector<int> A)//ГўГЁГўВіГ¤ ВіГ­ГґГ®Г°Г¬Г Г¶ВіВї Г­Г  ГҐГЄГ°Г Г­
 {
 	for (int i = 0; i < A.size(); ++i)
 	{
@@ -96,22 +97,22 @@ void show(vector<int> A)//вивід інформації на екран
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	vector <int> A; //гайки
-	vector <int> B; //болти
-	vector <int> C; //пари гайка-болт
-	vector <int> Arest; //гайки які залишилися без пари
-	vector <int> Brest; //болти які залишилися без пари
+	vector <int> A; //ГЈГ Г©ГЄГЁ
+	vector <int> B; //ГЎГ®Г«ГІГЁ
+	vector <int> C; //ГЇГ Г°ГЁ ГЈГ Г©ГЄГ -ГЎГ®Г«ГІ
+	vector <int> Arest; //ГЈГ Г©ГЄГЁ ГїГЄВі Г§Г Г«ГЁГёГЁГ«ГЁГ±Гї ГЎГҐГ§ ГЇГ Г°ГЁ
+	vector <int> Brest; //ГЎГ®Г«ГІГЁ ГїГЄВі Г§Г Г«ГЁГёГЁГ«ГЁГ±Гї ГЎГҐГ§ ГЇГ Г°ГЁ
 						//readFromFile("Input1.txt", A, B);
 						//readFromFile("Input2.txt", A, B);
 	readFromFile("Input2.txt", A, B);
 	findPair(A, B, C);
 	Tail(A, Arest);
 	Tail(B, Brest);
-	cout << "Пары: ";
+	cout << "ГЏГ Г°Г»: ";
 	show(C);
-	cout << "Гайки без пары: ";
+	cout << "ГѓГ Г©ГЄГЁ ГЎГҐГ§ ГЇГ Г°Г»: ";
 	show(Arest);
-	cout << "Болты без пары: ";
+	cout << "ГЃГ®Г«ГІГ» ГЎГҐГ§ ГЇГ Г°Г»: ";
 	show(Brest);
 	cin.get();
 	return 0;
